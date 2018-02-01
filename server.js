@@ -21,6 +21,7 @@ app.get('/formpost', function(req, res){
 
 app.get('/index.html', function(req, res){
   console.log("Home");
+  res.send(index.html);
 })
 
 app.get('display', function(req, res){
