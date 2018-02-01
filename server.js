@@ -5,7 +5,8 @@ var submissions = [];
 
 app.get('/', function (req, res) {
   //res.send('Hello World!')
-  res.sendfile(index.html, {root: './public'}); // Files inside "public" folder
+  var fileToSend = "index.html";
+  res.sendfile(fileToSend, {root: './public'}); // Files inside "public" folder
 })
 
 
