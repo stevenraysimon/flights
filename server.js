@@ -12,7 +12,7 @@ app.get('/somethingelse', function (req, res) {
   res.send('<html><body><h1>Adding More</h1></body></html>')
 })
 
-app.get('/formpost', function(req, res){
+app.get('/processit', function(req, res){
   console.log("They submitted: "+ req.query.textfield);
   res.send("You submitted: "+ req.query.textfield);
   submissions.push(req.query.textfield);
@@ -21,7 +21,6 @@ app.get('/formpost', function(req, res){
 
 app.get('/index.html', function(req, res){
   console.log("Home");
-  res.send(index.html);
 })
 
 app.get('display', function(req, res){
