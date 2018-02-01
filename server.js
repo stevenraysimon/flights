@@ -19,6 +19,10 @@ app.get('/formpost', function(req, res){
 
 })
 
+app.get('/index.html', function(req, res){
+  console.log("Home");
+})
+
 app.get('display', function(req, res){
   var html = "<html><body>";
   for (var i = 0; i < submissions.length; i++){
