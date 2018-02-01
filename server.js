@@ -6,7 +6,8 @@ app.get('/', function (req, res) {
 })
 
 app.get('/somethingelse', function (req, res) {
-  res.send('<html><body><h1>Something Else</h1><</body></html>')
+  res.send('<html><body><h1>Something Else</h1></body></html>')
+  res.send('<html><body><h1>Adding More</h1></body></html>')
 })
 
 app.listen(3000, function () {
