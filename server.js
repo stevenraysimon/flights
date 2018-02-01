@@ -4,8 +4,10 @@ var app = express()
 var submissions = [];
 
 app.get('/', function (req, res) {
-  res.send('Hello World!')
+  //res.send('Hello World!')
+  res.sendfile(index.html, {root: './public'}); // Files inside "public" folder
 })
+
 
 app.get('/somethingelse', function (req, res) {
   res.send('<html><body><h1>Something Else</h1></body></html>')
